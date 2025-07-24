@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 读取 Excel 文件
-excel_file = pd.ExcelFile('D:/junior_year_1st/商务数据分析/项目/数据采集/车300重采-2320条.xlsx')
+excel_file = pd.ExcelFile('D:/junior_year_1st/数据分析/项目/数据采集/车300重采-2320条.xlsx')
 
 # 读取每个表名的数据
 df = excel_file.parse('Sheet1')
@@ -33,5 +33,5 @@ for index, row in null_energy_and_fuel.iterrows():
 print("规则 4：填充能源类型与油耗都为空的数据，填充行数：", len(null_energy_and_fuel))
 
 # 将其保存为 xlsx 文件
-df.to_excel('D:/junior_year_1st/商务数据分析/项目/数据采集/车300重采-2320条_清洗后.xlsx', index=False)
+df.to_excel('D:/junior_year_1st/数据分析/项目/数据采集/车300重采-2320条_清洗后.xlsx', index=False)
 
